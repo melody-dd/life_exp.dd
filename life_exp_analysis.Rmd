@@ -1,0 +1,17 @@
+---
+title: "Life Expectancy Analysis"
+author: "Dong Ding"
+date: "1/14/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+##Abstract
+
+Here, we will examine the famous relationship between  time and maximum life expectancy as observed in Oeppen and Vaupel (2002).
+
+##Analysis
+
