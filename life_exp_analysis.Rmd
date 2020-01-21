@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Here, we will examine the famous relationship between  time and maximum life expectancy as observed in Oeppen and Vaupel (2002).
 
-##Analysis
+##Life Expectancy Analysis
 Loads the data 
 ```{r}
 library(gapminder)
@@ -23,7 +23,14 @@ gapminder_unfiltered
 
 #Caluculate maximum
 ```{r}
-
+library(dplyr)
+gapminder_unfiltered %>% 
+  group_by(year) %>% 
+  filter(lifeExp == max(lifeExp)) %>%
+  arrange(year) %>%
+  ungroup() ->
+  maxdf
+maxdf
 ```
 
 
